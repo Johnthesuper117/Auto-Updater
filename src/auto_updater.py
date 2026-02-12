@@ -1,11 +1,11 @@
 """
-Module: updater.py
-Version: 2.0.0
+Module: auto_updater.py
+Version: 1.0.0
 Author: Johnthesuper117
-Description: A modular, zip-based auto-updater for complex directory structures.
+Description: A modular, zip-based auto updater for complex directory structures.
 Usage:
-    - CLI: python updater.py --check (or --update)
-    - Code: from updater import AutoUpdater
+    - CLI: python auto_updater.py --check (or --update)
+    - Code: from auto_updater import AutoUpdater
 """
 
 import os
@@ -21,7 +21,7 @@ import argparse
 # --- CONFIGURATION DEFAULTS ---
 # Replace these with your actual repo details or pass them into the class
 DEFAULT_OWNER = "Johnthesuper117"
-DEFAULT_REPO = "Self-Updating-Script"
+DEFAULT_REPO = "Auto-Updater"
 DEFAULT_BRANCH = "main"
 
 # Logging Setup
@@ -171,7 +171,6 @@ if __name__ == "__main__":
     parser.add_argument('--check', action='store_true', help="Check for updates without installing.")
     parser.add_argument('--update', action='store_true', help="Check and apply updates if available.")
     parser.add_argument('--force', action='store_true', help="Force re-download regardless of version.")
-    parser.add_argument('--restart', action='store_true', help="Restart the application after update.")
     
     args = parser.parse_args()
     
