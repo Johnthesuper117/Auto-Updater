@@ -1,6 +1,6 @@
 """
 File: main.py
-Version: 1.0.1
+Version: 1.0.0
 Author: Johnthesuper117
 Description: A self-updating Python script using GitHub as the source of truth.
 """
@@ -13,7 +13,7 @@ import json
 import logging
 
 # --- CONFIGURATION ---
-CURRENT_VERSION = "1.0.1"
+CURRENT_VERSION = "1.0.0"
 REPO_URL = "https://raw.githubusercontent.com/Johnthesuper117/Self-Updating-Script/main/"
 VERSION_FILE_URL = REPO_URL + "version.json"
 
